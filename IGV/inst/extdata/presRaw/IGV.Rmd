@@ -392,7 +392,7 @@ http://www.broadinstitute.org/igvdata/exampleFiles/exampleSampleInfo.txt
 - External tracks (relevant to the genome) can be loaded from the IGV server or Encode-IGV server.
 
 ---
-## Load data from a server (IGV/Encode servers)
+## Load data from a server (IGV/Encode)
 
 <img src="imgs/ls1.png" alt="igv" height="400" width="500">
 
@@ -405,43 +405,212 @@ http://www.broadinstitute.org/igvdata/exampleFiles/exampleSampleInfo.txt
 - This however does not come with sample information provided through IGV interface
 
 ---
-## Loading Genome Information
+class: inverse, center, middle
+
+# Viewing Data
+
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=720px></html> 
 
 ---
-## Loading Genome Information
----
-## Loading Genome Information
----
-## Loading Genome Information
----
-## Loading Genome Information
+## Viewing data
+
+- IGV associates common file formats with default display methods.
+ 
+- Most of the time IGV will make a sensible choice how we wish to display data.
 
 ---
-## Loading Genome Information
----
-## Loading Genome Information
----
-## Loading Genome Information
----
-## Loading Genome Information
+## Accepted formats and default display.
+
+- Information on accepted file formats and default display can be found at -
+
+ http://www.broadinstitute.org/software/igv/RecommendedFileFormats
+ 
+ <img src="imgs/af.png" alt="igv" height="400" width="700">
 
 ---
-## Loading Genome Information
+## Bed/bigBed
+
+.pull-left[
+- Basic
+- Tab-delimited
+- Chrom,Start,End
+- Bed6
+- bigBed (recommended)
+]
+.pull-right[
+ <img src="imgs/bbed.png" alt="igv" height="400" width="700">
+
+]
 ---
-## Loading Genome Information
+## Wig, BedGraph and BigWig
+
+.pull-left[
+- Wig/bedGraph require high memory load
+- Recommended format is bigWig
+]
+.pull-right[
+ <img src="imgs/wigBg.png" alt="igv" height="400" width="700">
+
+]
 ---
-## Loading Genome Information
----
-## Loading Genome Information
+## BAM alignment files
+.pull-left[
+- BAM files contain alignment information.
+- Require an accompanying .bai index file for display
+]
+.pull-right[
+ <img src="imgs/bam1.png" alt="igv" height="400" width="700">
+
+]
 
 ---
-## Loading Genome Information
+## Finer control of display
+
+- IGV allows for customization of track display.
+ 
+- Menu bar -> View -> Preferences
+ 
+- Select track (right click)
+
 ---
-## Loading Genome Information
+## Display preferences
+
+** General **
+
+ <div align="center">
+<img src="imgs/dpg.png" alt="igv" height="400" width="400">
+</div>
+
 ---
-## Loading Genome Information
+## Display preferences
+
+** Tracks **
+
+ <div align="center">
+<img src="imgs/dpt.png" alt="igv" height="400" width="400">
+</div>
+
 ---
-## Loading Genome Information
+## Display preferences
+
+** Alignments **
+
+ <div align="center">
+<img src="imgs/dpa.png" alt="igv" height="400" width="400">
+</div>
+
+---
+## Track display options
+
+** Graph/interval files**
+- Track colour/appearance
+
+ <div align="center">
+<img src="imgs/tdg.png" alt="igv" height="400" width="400">
+</div>
+---
+## Track display options
+
+** Graph/interval files**
+- Graph type
+
+ <div align="center">
+<img src="imgs/tdg2.png" alt="igv" height="400" width="400">
+</div>
+---
+## Track display options
+**Data Scaling.**
+
+ <div align="center">
+<img src="imgs/tds.png" alt="igv" height="400" width="400">
+</div>
+---
+## Track display options
+
+
+- Autoscaling adjusts to track's visible signal maximum
+
+ <div align="center">
+<img src="imgs/scaling.png" alt="igv" height="400" width="400">
+</div>
+---
+class: inverse, center, middle
+
+# Some more useful IGV features
+
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=720px></html> 
+
+---
+
+## IGV displays splicing.
+
+ <div align="center">
+<img src="imgs/splicing.png" alt="igv" height="400" width="400">
+</div>
+
+
+---
+## IGV's Sashimi plots
+
+(http://www.broadinstitute.org/igv/Sashimi)
+
+ <div align="center">
+<img src="imgs/shashimi.png" alt="igv" height="400" width="400">
+</div>
+
+
+---
+## IGV - Overlay tracks
+
+ <div align="center">
+<img src="imgs/overlay.png" alt="igv" height="400" width="400">
+</div>
+
+---
+## Overlay tracks
+
+ <div align="center">
+<img src="imgs/overlay2.png" alt="igv" height="400" width="400">
+</div>
+
+---
+## Track summarisation.
+
+IGV can be used to combine tracks
+
+ <div align="center">
+<img src="imgs/combineDT.png" alt="igv" height="400" width="400">
+</div>
+
+---
+## Sum of two tracks
+
+ <div align="center">
+<img src="imgs/combineDT2.png" alt="igv" height="400" width="400">
+</div>
+
+---
+## Create new summed track
+
+ <div align="center">
+<img src="imgs/combineDT3.png" alt="igv" height="400" width="400">
+</div>
+---
+## IGVtools
+- IGVTools can be used to post-process genomics data.
+- Includes indexing, sorting and genome graph creation.
+.pull-left[
+<img src="imgs/itools.png" alt="igv" height="400" width="400">
+]
+.pull-right[
+<img src="imgs/itools2.png" alt="igv" height="200" width="400">
+]
+---
+## Where to get help?
+
+- http://www.broadinstitute.org/igv/UserGuide
+ 
+- https://groups.google.com/forum/#!forum/igv-help
 
 
 
