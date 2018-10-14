@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Integrative Genomics Viewer</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Rockefeller University, Bioinformatics Resource Centre" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="metropolisCustom.css" type="text/css" />
+    <link rel="stylesheet" href="metropolis-fontsCustom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Integrative Genomics Viewer
+### Rockefeller University, Bioinformatics Resource Centre
+### <a href="http://rockefelleruniversity.github.io/Plotting_In_R/" class="uri">http://rockefelleruniversity.github.io/Plotting_In_R/</a>
+
+---
+
+## Overview
+
+- Introduction to IGV.
+    - What is IGV.
+    - How to run IGV.
+- Navigating IGV.
+    - The IGV user interface.
+    - Moving around genomes.
+- Loading and visualising data.
+    - Genome information and annotation.
+    - User supplied data.
+    - Sample information.
+    - External data.
+- Displaying genomics data
+    - Basic visualisation.
+    - Data dependent visualisation.
+
+---
+## What is IGV?
+
+- Created by the Broad institute.
+- Genome browser.
+    - Visualises genomic data (expression, ChIP, resequencing, multiple alignment, shRNA)
+    - Handles most common genomic data types.
+Java Desktop application
+    - No dependence on server
+    - Loads data locally or from URL, consumes memory and CPU.
+
+---
+## How to run IGV?
+
+- Requires Java
+- IGV available from Broad
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/broad.png" alt="igv" height="300" width="600"&gt;
+&lt;/div&gt;
+
+http://www.broadinstitute.org/software/igv/download
+
+---
+class: inverse, center, middle
+
+# Reference Genomes
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt; 
+
+---
+## Are there we there yet?
+
+- The human genome isnt complete! 
+- In fact, most model organisms's reference genomes are being regularly updated.
+- Reference genomes consist of mixture of known chromosomes and unplaced contigs called a  **Genome Reference Assembly**.
+- Major revisions to assembies result in change of co-ordinates.
+- Requires conversion between revisions.
+- The latest genome assembly for humans is GRCh38.
+- Patches add information to the assembly without disrupting the chromosome coordinates . i.e GRCh38.p3
+
+---
+## Genome Reference Consortium.
+
+- GRC is collaboration of institutes which curate and maintain the reference genomes for 3 model organims.
+    - Human - GRCh38.p3
+    - Mouse - GRCm38.p3
+    - Zebrafish - GRCz10
+- Other model organisms are maintained separately.
+    - Drosophila - Berkeley Drosophila Genome Project, BDGP36
+
+---
+## Why do we need to know about reference genomes
+- Allows for genes and genomic features to be evaluated in their linear genomic context.
+    - Gene A is close to Gene B
+    - Gene A and Gene B are within feature C.
+- Can be used to align shallow targeted high-thoughput sequencing to a pre-built map of an organisms genome.
+
+---
+## Aligning to a reference genomes
+
+![](imgs/alignToRef.png)
+
+---
+## A reference genome
+
+- A reference genome is a collection of contigs.
+- A contig is a stretch of DNA sequence encoded as A,G,C,T,N.
+- Typically comes in FASTA format.
+    - "&gt;" line contains information on contig
+    - Lines following contain contig sequence
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/fasta.png" alt="igv" height="300" width="600"&gt;
+&lt;/div&gt;
+
+
+---
+class: inverse, center, middle
+
+# High-throughput Sequencing formats.
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt;
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

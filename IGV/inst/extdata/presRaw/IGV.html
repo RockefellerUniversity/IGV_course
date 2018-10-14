@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Integrative Genomics Viewer</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Rockefeller University, Bioinformatics Resource Centre" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="metropolisCustom.css" type="text/css" />
+    <link rel="stylesheet" href="metropolis-fontsCustom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Integrative Genomics Viewer
+### Rockefeller University, Bioinformatics Resource Centre
+### <a href="http://rockefelleruniversity.github.io/Plotting_In_R/" class="uri">http://rockefelleruniversity.github.io/Plotting_In_R/</a>
+
+---
+
+## Overview
+
+- Introduction to IGV.
+    - What is IGV.
+    - How to run IGV.
+- Navigating IGV.
+    - The IGV user interface.
+    - Moving around genomes.
+- Loading and visualising data.
+    - Genome information and annotation.
+    - User supplied data.
+    - Sample information.
+    - External data.
+- Displaying genomics data
+    - Basic visualisation.
+    - Data dependent visualisation.
+
+---
+## What is IGV?
+
+- Created by the Broad institute.
+- Genome browser.
+    - Visualises genomic data (expression, ChIP, resequencing, multiple alignment, shRNA)
+    - Handles most common genomic data types.
+Java Desktop application
+    - No dependence on server
+    - Loads data locally or from URL, consumes memory and CPU.
+
+---
+## How to run IGV?
+
+- Requires Java
+- IGV available from Broad
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/broad.png" alt="igv" height="300" width="600"&gt;
+&lt;/div&gt;
+
+http://www.broadinstitute.org/software/igv/download
+
+
+---
+## How to run IGV? (Binary version)
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/binaryV.png" alt="igv" height="300" width="600"&gt;
+&lt;/div&gt;
+
+- Download to computer.
+- Runs locally.
+- Archived versions available
+
+---
+## How to run IGV? (Webstart)
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/javaV.png" alt="igv" height="300" width="600"&gt;
+&lt;/div&gt;
+
+- Runs from webstart.
+- Always runs latest version of IGV
+
+---
+## IGV GUI
+
+![](imgs/igvGUI.png)
+
+---
+## IGV GUI
+
+.pull-left[
+![](imgs/igvH.png)
+]
+.pull-right[
+- Sample information panel &lt;1&gt;
+- Genome Navigation panel &lt;2&gt;
+- Data panel &lt;3&gt;
+- Attribute panel &lt;4&gt;
+]
+---
+## Menu bar
+&lt;div align="center"&gt;
+&lt;img src="imgs/menubar.png" alt="igv" height="100" width="800"&gt;
+&lt;/div&gt;
+
+- File - Load data/sample information.
+- Genome - Load and manage genomes.
+- View -  Display preferences.
+- Tracks - Group/sort/filter data tracks.
+- Regions - Create region/gene lists.
+- Tools -  Access to Integrated tools (IGVtools/Bedtools).
+- GenomeSpace - Export/import from Genomespace
+
+---
+## Moving around genomes
+- Cytoband selection and zooming
+- Scrolling
+- Selection of region of interest
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/moving.png" alt="igv" height="400" width="800"&gt;
+&lt;/div&gt;
+
+---
+## Moving around genomes
+
+![](imgs/moving.png)
+
+---
+## Zoom
+
+
+.pull-left[
+![](imgs/zoom1.png)
+]
+.pull-right[
+![](imgs/zoom2.png)
+]
+---
+
+## Scrolling
+
+![](imgs/scrolling.png)
+
+---
+
+## Jump to region.
+
+.pull-left[
+![](imgs/jmp1.png)
+]
+.pull-right[
+![](imgs/jmp2.png)
+]
+
+---
+
+## “Bookmarking” regions of interest
+
+- Regions may be added to “Regions of interest”
+ 
+- These act as bookmarks for areas of particular interest
+ 
+- Bookmarks can be added by -
+    - Bookmarking visible window
+    - Selecting region within window
+
+---
+
+## Bookmarking - Visible window
+
+
+.pull-left[
+![](imgs/book.png)
+]
+.pull-right[
+![](imgs/book2.png)
+]
+
+---
+
+## Bookmarking
+&lt;div align="center"&gt;
+&lt;img src="imgs/book3.png" alt="igv" height="400" width="600"&gt;
+&lt;/div&gt;
+
+---
+
+## Bookmarking
+
+- Bookmarks may be created from selecting "region of interest" button and edge of region
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/book4.png" alt="igv" height="400" width="600"&gt;
+&lt;/div&gt;
+
+
+---
+
+## Sequences from regions of interest
+- A useful feature of "regions of interest" is to retrieve of BLAT sequences.
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/seq1.png" alt="igv" height="400" width="600"&gt;
+&lt;/div&gt;
+
+---
+
+## Sequences from regions of interest
+- BLAT results present as table of hits.
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/seq2.png" alt="igv" height="400" width="600"&gt;
+&lt;/div&gt;
+
+
+---
+
+## Viewing sequences
+
+- At a predefined resolution, sequence information becomes available.
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/seq3.png" alt="igv" height="400" width="600"&gt;
+&lt;/div&gt;
+
+
+---
+
+## Viewing sequences
+
+- Strand of sequence can be altered.
+- Differing translation tables can be selected
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/seq4.png" alt="igv" height="400" width="600"&gt;
+&lt;/div&gt;
+
+
+
+---
+
+## Sequences from regions of interest
+- A useful feature of "regions of interest" is to retrieve of BLAT sequences.
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/seq1.png" alt="igv" height="400" width="600"&gt;
+&lt;/div&gt;
+
+
+---
+class: inverse, center, middle
+
+# Loading data in IGV
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt; 
+
+---
+## Loading Genome Information
+
+- Most genomes can be selected from dropdown.
+
+.pull-left[
+![](imgs/lgi.png)
+]
+.pull-right[
+![](imgs/lgi2.png)
+]
+
+
+---
+## Loading Genome Information
+
+
+
+.pull-left[
+- Genomes not included may be downloaded from repository
+]
+
+.pull-right[
+![](imgs/lgi3.png)
+]
+
+---
+
+## Loading Genome Information
+
+- For supported genomes, gene positions are automatically included in “feature” panel.
+- Additional gene positions can be loaded into IGV in gff format
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/moving.png" alt="igv" height="400" width="800"&gt;
+&lt;/div&gt;
+
+---
+## Loading Sample data
+- Most common formats can be loaded into IGV through file menu
+- Acceptable data formats include:-
+    - BED (.bed)
+    - BAM and index (.bam with .bai/.bam.bai)
+    - BigWig (.bw)
+    - BedGraph/Wig (.bedGraph, .wig)
+    - And many more..
+    
+- **link to IGV formats.**
+
+---
+## Loading Sample Metadata
+
+.pull-left[
+- IGV allows the inclusion of information on samples.
+- Sample information is included in sample information panel.
+]
+.pull-right[
+![](imgs/lsm.png)
+]
+---
+## Loading Sample Metadata
+
+Example Sample information file
+http://www.broadinstitute.org/igvdata/exampleFiles/exampleSampleInfo.txt
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/smdT.png" alt="igv" height="400" width="800"&gt;
+&lt;/div&gt;
+
+
+---
+## Sample Metadata with TrackTables
+
+- Tracktables R/Bioconductor packages
+- Creates HTML reports with sample information for use with IGV.
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/tracktables.png" alt="igv" height="400" width="500"&gt;
+&lt;/div&gt;
+
+---
+## Using sample information.
+
+- Sample information can include discrete and continuous.
+ 
+    - Can be used to “sort” and “filter” tracks.
+ 
+    - Can split tracks across panels by “group”
+
+
+---
+## Loading Genome Information
+
+
+.pull-left[
+&lt;div align="center"&gt;
+&lt;img src="imgs/tt1.png" alt="igv" height="150" width="500"&gt;
+&lt;/div&gt;
+]
+.pull-right[
+&lt;div align="center"&gt;
+&lt;img src="imgs/tt2.png" alt="igv" height="400" width="500"&gt;
+&lt;/div&gt;
+]
+
+---
+## Loading external data and annotation
+ ** Load data from a URL ** 
+- As with UCSC, IGV supports data hosted on external servers.
+- Data accessible from a URL such as HTTP and FTP can be loaded using the “Load from URL”.
+
+---
+## Load data from a URL
+
+
+.pull-top[
+![](imgs/ldu1.png)
+]
+.pull-bottom[
+![](imgs/ldu2.png)
+]
+
+
+---
+## Loading external data and annotation
+** Load data from a server (IGV/Encode servers).** 
+
+- Unlike UCSC, IGV comes with few external tracks.
+ 
+ 
+- External tracks (relevant to the genome) can be loaded from the IGV server or Encode-IGV server.
+
+---
+## Load data from a server (IGV/Encode servers)
+
+&lt;img src="imgs/ls1.png" alt="igv" height="400" width="500"&gt;
+
+
+---
+## Grabbing encode data directly
+- Encode data can be downloaded from UCSC.
+    - http://genome.ucsc.edu/ENCODE/
+
+- This however does not come with sample information provided through IGV interface
+
+---
+## Loading Genome Information
+
+---
+## Loading Genome Information
+---
+## Loading Genome Information
+---
+## Loading Genome Information
+---
+## Loading Genome Information
+
+---
+## Loading Genome Information
+---
+## Loading Genome Information
+---
+## Loading Genome Information
+---
+## Loading Genome Information
+
+---
+## Loading Genome Information
+---
+## Loading Genome Information
+---
+## Loading Genome Information
+---
+## Loading Genome Information
+
+---
+## Loading Genome Information
+---
+## Loading Genome Information
+---
+## Loading Genome Information
+---
+## Loading Genome Information
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
