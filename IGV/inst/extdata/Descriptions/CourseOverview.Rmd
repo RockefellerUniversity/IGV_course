@@ -1,0 +1,10 @@
+## Course Overview
+
+<br>
+[<img src="https://github.com/RockefellerUniversity/Genomic_Datay/workflows/R-CMD-check-bioc/badge.svg">](https://github.com/RockefellerUniversity/Genomic_Data/actions?query=workflow%3AR-CMD-check-bioc)
+
+This course introduces the use BROAD's Integrative Genome Viewer (IGV) to display genomics data.
+
+Course material and exercises are available to view as rendered HTML at http://rockefelleruniversity.github.io/IGV_course/.
+All material is available to download under GPL v3 license.
+

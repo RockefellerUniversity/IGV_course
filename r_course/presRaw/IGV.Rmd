@@ -17,10 +17,25 @@ output:
     number_sections: false  ## if you want number sections at each table header
     theme: united  # many options for theme, this one is my favorite.
     highlight: tango  # specifies the syntax highlighting style
+params:
+  isSlides: "no"
+---
+```{r setup, include=FALSE}
+suppressPackageStartupMessages(require(knitr))
+knitr::opts_chunk$set(echo = TRUE, tidy = T)
+```
 
+```{r, results='asis',include=TRUE,echo=FALSE}
+if(params$isSlides != "yes"){
+  cat("# IGV
 
 ---
-# IGV
+"    
+  )
+  
+}
+
+```
 
 ---
 ## Overview
@@ -259,13 +274,27 @@ Using gene lists you can visualise several genes concurrently.
 
 
 ---
-class: inverse, center, middle
+```{r, results='asis',include=TRUE,echo=FALSE}
+if(params$isSlides == "yes"){
+  cat("class: inverse, center, middle
 
-# Loading data in IGV
+# Loading Data in IGV
 
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=720px></html> 
 
 ---
+"    
+  )
+}else{
+  cat("# Loading Data in IGV
+
+---
+"    
+  )
+  
+}
+
+```
 ## Loading Genome Information
 
 - Most genomes can be selected from dropdown.
@@ -414,13 +443,27 @@ Try: "https://github.com/ThomasCarroll/tracktables-Data/raw/master/H3K4me3_Examp
 - This however does not come with sample information provided through IGV interface.
 
 ---
-class: inverse, center, middle
+```{r, results='asis',include=TRUE,echo=FALSE}
+if(params$isSlides == "yes"){
+  cat("class: inverse, center, middle
 
 # Viewing Data
 
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=720px></html> 
 
 ---
+"    
+  )
+}else{
+  cat("# Viewing Data
+
+---
+"    
+  )
+  
+}
+
+```
 ## Viewing data
 
 - IGV associates common file formats with default display methods.
@@ -542,14 +585,29 @@ Autoscaling adjusts to track's visible signal maximum.
  <div align="center">
 <img src="imgs/scaling.png" alt="igv" height="400" width="400">
 </div>
+
 ---
-class: inverse, center, middle
+```{r, results='asis',include=TRUE,echo=FALSE}
+if(params$isSlides == "yes"){
+  cat("class: inverse, center, middle
 
 # Some more useful IGV features
 
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=720px></html> 
 
 ---
+"    
+  )
+}else{
+  cat("# Some more useful IGV features
+
+---
+"    
+  )
+  
+}
+
+```
 
 ## IGV displays splicing
 
