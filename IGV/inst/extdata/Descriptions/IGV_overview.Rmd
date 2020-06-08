@@ -1,0 +1,9 @@
+<br>
+
+#### **IGV**
+
+This course reviews the basics for using the genome browser IGV including:
+
+* Navigating around the IGV dashboard
+* Loading data
+* Useful tools in IGV
