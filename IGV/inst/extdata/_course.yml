@@ -1,6 +1,6 @@
 Description:
   CourseName: Integrated Genome Viewer
-OverviewRmd: CourseOverview.Rmd
+  OverviewRmd: CourseOverview.Rmd
 Presentations:
   titles: Session1
   PresRmd: IGV.Rmd
