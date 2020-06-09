@@ -1,11 +1,18 @@
 Package: IGV
 Type: Package
-Title: What the package does (short line)
-Version: 1.0
-Date: 2018-03-17
-Author: Thomas Carroll
-Maintainer: Thomas Carroll <tcarroll@rockefeller.edu>
-Description: Course for understanding Genomics Data
+Title: IGV
+Version: 0.1.0
+Author: Ji-Dung Luo, Matt Paul, Wei Wang, Doug Barrows and Thomas Carroll.
+Maintainer: Thomas Carroll <tc.infomatics@gmail>
+Description: More about what it does (maybe more than one line)
 License: What license is it under?
-Depends: ggplot2
+LazyData: TRUE
+biocViews: Training
+Depends: methods, rmarkdown, rio
+Suggests: knitr,
+    rmarkdown,
+    testthat,
+    yaml
+SystemRequirements: IGV
+VignetteBuilder: knitr
 RoxygenNote: 6.0.1
