@@ -5,4 +5,4 @@ Presentations:
   titles: Session1
   PresRmd: IGV.Rmd
   PresOverviewRmd: IGV_Overview.Rmd
-  Exercises: 
+  Exercises: exercise_1.Rmd
