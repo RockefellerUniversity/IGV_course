@@ -3,6 +3,6 @@ Description:
 OverviewRmd: CourseOverview.Rmd
 Presentations:
   titles: Session1
-PresRmd: IGV.Rmd
-PresOverviewRmd: IGV_Overview.Rmd
-Exercises: 
+  PresRmd: IGV.Rmd
+  PresOverviewRmd: IGV_Overview.Rmd
+  Exercises: 
