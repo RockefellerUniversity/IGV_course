@@ -1,9 +1,22 @@
 ## Course Overview
 
+### Course Integrity
+**This course is compiled automatically on _`r Sys.Date()`_ **
 <br>
-[<img src="https://github.com/RockefellerUniversity/Genomic_Datay/workflows/R-CMD-check-bioc/badge.svg">](https://github.com/RockefellerUniversity/Genomic_Data/actions?query=workflow%3AR-CMD-check-bioc)
+[<img src="https://github.com/RockefellerUniversity/IGV_course/workflows/compilation-check/badge.svg">](https://github.com/RockefellerUniversity/IGV_course/actions?query=workflow%3compilation-check)
 
-This course introduces the use BROAD's Integrative Genome Viewer (IGV) to display genomics data.
+**The course is tested and available on MacOS, Windows and Ubuntu Linux for `r R.Version()$version.string`**
+<br>
+[<img src="https://github.com/RockefellerUniversity/IGV_course/workflows/OS-check/badge.svg">](https://github.com/RockefellerUniversity/IGV_course/actions?query=workflow%3AOS-check)
+
+<br>
+<br>
+
+### Overview
+
+This course introduces the use BROAD's Integrative Genome Viewer (IGV) to display genomics data.  
+
+Each section is presented as HTML presentations or single page document. Exercises and answer sheets are included to practice techniques and provide future reference examples.
 
 Course material and exercises are available to view as rendered HTML at http://rockefelleruniversity.github.io/IGV_course/.
 All material is available to download under GPL v3 license.
