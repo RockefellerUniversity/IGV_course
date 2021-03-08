@@ -1,1 +1,98 @@
-We have no exercises yet for this course.
+---
+title: "IGV"
+author: "Rockefeller University, Bioinformatics Resource Centre"
+date: "https://rockefelleruniversity.github.io/IGV_course/"
+output: 
+  html_document:
+    number_sections: false  ## if you want number sections at each table header
+    theme: united  # many options for theme, this one is my favorite.
+    highlight: tango  # specifies the syntax highlighting style
+params:
+  toMessage: false    
+---
+
+```{r, setup,include=FALSE}
+toMessage <- ifelse(!is.null(params$toMessage),params$toMessage,FALSE)
+message(toMessage)
+```
+
+<p>&nbsp;</p>
+These exercises are about using IGV are relate to this [training session](https://rockefelleruniversity.github.io/IGV_course/). The exercises walk you through some commonly used IGV workflows to visualize data, so you can get familiar with the console and tools available. 
+
+We will be using externally hosted data available from Encode including ChIPseq and RNAseq data. Please feel free to try other datasets once you have run through the tasks but remember IGV is hosted on your machine so less powerful computers will feel the memory load of large numbers of datasets.
+
+## ChIPseq data
+
+This section looks at how to load and manipulate some ChIPseq data. The data is from a lymphoblastoma cell line and contains ChIPseq samples for several histone types.
+Loading IGV and moving around the gene of interest.
+
+* First, load IGV and select the hg19 genome.
+* Navigate to chr12:6,641,585-6,649,537.
+* Navigate to Gapdh.
+* Zoom out to see the surrounding genes.
+* Select the “RefSeq Genes” track and expand to see all transcript isoforms.
+* Scroll to the left to discover the non-coding RNA SCRNA10.
+* Click on SCRNA to bring up a window with further information.
+* Double click on Gapdh to recentre window on the gene.
+* Add a region of interest at the Gapdh locus using the IGV menu * Regions -> Region Navigator -> add
+* Right click the “Region of interest” and edit description to show “Active gene”
+Loading data
+* Go to the IGV menu -> File -> load from server
+* From the menu follow drop-down
+ - Tutorials -> UI Basics (Encode):
+ - GM12878 CFCF
+ - GM12878 H3K27ac
+ - GM12878 H3K27me3
+ - GM12878 H3K36me3
+ - GM12878 H3K4me3
+ - GM12878 H3K9ac
+
+#### Controlling IGV display
+
+* Select all tracks and then select “autoscale.”
+* At the Gapdh locus, investigate the enrichment of signal over gene body.
+* Set all the tracks to maintain current data ranges (deselect autoscale) Once set, navigate to PIANP.
+* Note the difference in enrichment of ChIPseq.
+* Add as “Region of interest” and edit description to show “Inactive gene”
+* Zoom out to compare enrichment across neighbouring genes.
+* Go to Regions -> Gene Lists.. -> “proneural dev genes”
+* Inspect the signal across genes to determine their expression state.
+* Return to main view by selecting all from chromosome dropdown.
+* Colour all track by a unique colour. Good idea to make K27me3 the most distinct colour to rest. Autoscalealltracks.
+* Select all tracks and create an overlay,
+  - select tracks -> Create Overlay Track
+* Change track height to 100
+* Select tracks -> Change Track Height
+* Revisit Gapdh, PIANP and gene list. Scan across genome to identify silent and active gene expression.
+
+## RNAseq data 
+
+* Start a new session
+* Clear data by going to IGV menu -> File -> New Session... Loading the data
+* Go to the IGV menu -> File -> load from server
+* From the menu follow drop-down
+* Tutorials -> RNAseq (Body Map)
+  - Heart
+  - Lung
+* Go to IGV menu -> Views -> Preferences -> Alignments
+* Tick “show junction track”
+* Set “visibility range threshold’ to 15kb
+* Go to SLC25A3 gene.
+* Collapse reads track (named Heart/Liver)
+
+#### Inspect RNAseq data
+
+* Select tracks -> Colour Alignments by -> Read Strand to identify strand of transcript.
+* Expand “Features track” to identify alternative exons/transcripts.
+* Inspect coverage tracks to discover areas of coverage unique to Heart or Liver sample.
+* Inspect junction tracks to evaluate alternative splicing of transcripts between tissue
+* Select junction tracks -> Expand
+* Compare major (first) transcript variant in Heart and Tissue
+* Click on junctions to identify start and end of spans. Another way to inspect splicing
+* Select tracks -> Shashmi plot
+* Select Gene Track -> Refseq Genes
+* Select Alignment Tracks –> Heart + Liver
+* Save image and compare junctions across tissue.
+
+
+ 
