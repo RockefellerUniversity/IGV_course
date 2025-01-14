@@ -1,7 +1,7 @@
 Package: IGV
 Type: Package
 Title: IGV
-Version: 0.1.4
+Version: 0.1.5
 Author: Matt Paul and Thomas Carroll.
 Maintainer: Thomas Carroll <tc.infomatics@gmail>
 Description: More about what it does (maybe more than one line)
