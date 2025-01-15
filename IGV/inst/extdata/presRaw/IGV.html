@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="" xml:lang="">
   <head>
     <title>Integrative Genomics Viewer</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="author" content="Rockefeller University, Bioinformatics Resource Centre" />
+    <script src="libs/header-attrs-2.27/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link rel="stylesheet" href="metropolisCustom.css" type="text/css" />
     <link rel="stylesheet" href="metropolis-fontsCustom.css" type="text/css" />
@@ -12,17 +13,26 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # Integrative Genomics Viewer
+]
+.author[
 ### Rockefeller University, Bioinformatics Resource Centre
-### <a href="http://rockefelleruniversity.github.io/Plotting_In_R/" class="uri">http://rockefelleruniversity.github.io/Plotting_In_R/</a>
+]
+.date[
+### <a href="https://rockefelleruniversity.github.io/IGV_course/" class="uri">https://rockefelleruniversity.github.io/IGV_course/</a>
+]
 
 ---
 
-## Overview
+# IGV
 
+---
+## Overview
+.pull-left[
 - Introduction to IGV.
     - What is IGV.
-    - How to run IGV.
+    - How to run IGV Desktop.
 - Navigating IGV.
     - The IGV user interface.
     - Moving around genomes.
@@ -34,41 +44,51 @@ class: center, middle, inverse, title-slide
 - Displaying genomics data
     - Basic visualisation.
     - Data dependent visualisation.
+]
+.pull-right[
+- IGV web
+  - How to run IGV web
+- Navigating IGV web
+- Loading and visualising data
+- Sharing web sessions
+]
 
 ---
 ## What is IGV?
 
 - Created by the Broad institute.
-- Genome browser.
-    - Visualises genomic data (expression, ChIP, resequencing, multiple alignment, shRNA)
+- Desktop Genome browser.
+    - Visualises genomic data (expression, ChIP, resequencing, multiple alignment, shRNA).
     - Handles most common genomic data types.
-Java Desktop application
-    - No dependence on server
-    - Loads data locally or from URL, consumes memory and CPU.
+    - Local java application
+    - No dependence on server.
+    - Loads data locally or from URL, consumes local memory and CPU.
 
 ---
-## How to run IGV?
+## How to get IGV?
 
-- Requires Java
-- IGV available from Broad
+- Desktop, Web app and Juicebox
+  - Desktop - Runs locally on desktop using Java
+  - Web app - Runs locally in web browser using JavaScript
+  - Juicebox - For HiC like data, runs locally on desktop using Java
 
 &lt;div align="center"&gt;
-&lt;img src="imgs/broad.png" alt="igv" height="300" width="600"&gt;
+&lt;img src="imgs/broad2.png" alt="igv" height="400" width="400"&gt;
 &lt;/div&gt;
 
 http://www.broadinstitute.org/software/igv/download
 
 
 ---
-## How to run IGV? (Binary version)
+## How to run IGV? (Binary)
 
 &lt;div align="center"&gt;
-&lt;img src="imgs/binaryV.png" alt="igv" height="300" width="600"&gt;
+&lt;img src="imgs/binary2.png" alt="igv" height="300" width="600"&gt;
 &lt;/div&gt;
 
 - Download to computer.
 - Runs locally.
-- Archived versions available
+- Archived versions available.
 
 ---
 ## How to run IGV? (Webstart)
@@ -78,7 +98,7 @@ http://www.broadinstitute.org/software/igv/download
 &lt;/div&gt;
 
 - Runs from webstart.
-- Always runs latest version of IGV
+- Always runs latest version of IGV.
 
 ---
 ## IGV GUI
@@ -90,26 +110,25 @@ http://www.broadinstitute.org/software/igv/download
 
 .pull-left[
 ![](imgs/igvH.png)
-]
+  ]
 .pull-right[
 - Sample information panel &lt;1&gt;
 - Genome Navigation panel &lt;2&gt;
 - Data panel &lt;3&gt;
 - Attribute panel &lt;4&gt;
-]
+  ]
+  
 ---
 ## Menu bar
-&lt;div align="center"&gt;
-&lt;img src="imgs/menubar.png" alt="igv" height="100" width="800"&gt;
-&lt;/div&gt;
+
+![](imgs/menubar.png)
 
 - File - Load data/sample information.
-- Genome - Load and manage genomes.
+- Genomes - Load and manage genomes.
 - View -  Display preferences.
 - Tracks - Group/sort/filter data tracks.
 - Regions - Create region/gene lists.
 - Tools -  Access to Integrated tools (IGVtools/Bedtools).
-- GenomeSpace - Export/import from Genomespace
 
 ---
 ## Moving around genomes
@@ -118,7 +137,7 @@ http://www.broadinstitute.org/software/igv/download
 - Selection of region of interest
 
 &lt;div align="center"&gt;
-&lt;img src="imgs/moving.png" alt="igv" height="400" width="800"&gt;
+&lt;img src="imgs/moving.png" alt="igv"&gt;
 &lt;/div&gt;
 
 ---
@@ -132,50 +151,48 @@ http://www.broadinstitute.org/software/igv/download
 
 .pull-left[
 ![](imgs/zoom1.png)
-]
+  ]
 .pull-right[
 ![](imgs/zoom2.png)
-]
+  ]
+  
 ---
-
 ## Scrolling
 
 ![](imgs/scrolling.png)
 
 ---
-
-## Jump to region.
+## Jump to region
 
 .pull-left[
 ![](imgs/jmp1.png)
-]
+  ]
 .pull-right[
 ![](imgs/jmp2.png)
-]
+  ]
 
 ---
 
 ## “Bookmarking” regions of interest
 
-- Regions may be added to “Regions of interest”
+- Regions may be added to “Regions of interest”.
  
-- These act as bookmarks for areas of particular interest
+- These act as bookmarks for areas of particular interest.
  
-- Bookmarks can be added by -
-    - Bookmarking visible window
-    - Selecting region within window
+- Bookmarks can be added by:
+    - Bookmarking visible window.
+    - Selecting region within window.
 
 ---
-
 ## Bookmarking - Visible window
 
 
 .pull-left[
 ![](imgs/book.png)
-]
+  ]
 .pull-right[
 ![](imgs/book2.png)
-]
+  ]
 
 ---
 
@@ -188,7 +205,8 @@ http://www.broadinstitute.org/software/igv/download
 
 ## Bookmarking
 
-- Bookmarks may be created from selecting "region of interest" button and edge of region
+- Bookmarks may be created quickly by selecting "region of interest" button.
+- Once selected just point-and-click where you want each edge to be.
 
 &lt;div align="center"&gt;
 &lt;img src="imgs/book4.png" alt="igv" height="400" width="600"&gt;
@@ -198,7 +216,8 @@ http://www.broadinstitute.org/software/igv/download
 ---
 
 ## Sequences from regions of interest
-- A useful feature of "regions of interest" is to retrieve of BLAT sequences.
+- A useful feature of "regions of interest" is to retrieve the sequence. 
+- You can even directly BLAT sequences.
 
 &lt;div align="center"&gt;
 &lt;img src="imgs/seq1.png" alt="igv" height="400" width="600"&gt;
@@ -226,25 +245,31 @@ http://www.broadinstitute.org/software/igv/download
 
 
 ---
-
 ## Viewing sequences
 
 - Strand of sequence can be altered.
-- Differing translation tables can be selected
+- Differing translation tables can be selected.
 
 &lt;div align="center"&gt;
 &lt;img src="imgs/seq4.png" alt="igv" height="400" width="600"&gt;
 &lt;/div&gt;
 
 
-
 ---
-
-## Sequences from regions of interest
-- A useful feature of "regions of interest" is to retrieve of BLAT sequences.
+## Gene Lists
+- When you do not have a region of interest but a group of genes you can use Gene Lists ("Regions" &gt; "Gene Lists"). 
+- You create your own list or use one of the curated lists. 
 
 &lt;div align="center"&gt;
-&lt;img src="imgs/seq1.png" alt="igv" height="400" width="600"&gt;
+&lt;img src="imgs/GL1.png" alt="igv" height="400" width="600"&gt;
+&lt;/div&gt;
+
+---
+## Gene Lists
+Using gene lists you can visualise several genes concurrently.
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/GL2.png" alt="igv" height="400" width="600"&gt;
 &lt;/div&gt;
 
 
@@ -262,10 +287,10 @@ class: inverse, center, middle
 
 .pull-left[
 ![](imgs/lgi.png)
-]
+  ]
 .pull-right[
 ![](imgs/lgi2.png)
-]
+  ]
 
 
 ---
@@ -275,11 +300,11 @@ class: inverse, center, middle
 
 .pull-left[
 - Genomes not included may be downloaded from repository
-]
+  ]
 
 .pull-right[
 ![](imgs/lgi3.png)
-]
+  ]
 
 ---
 
@@ -300,9 +325,9 @@ class: inverse, center, middle
     - BAM and index (.bam with .bai/.bam.bai)
     - BigWig (.bw)
     - BedGraph/Wig (.bedGraph, .wig)
-    - And many more..
+    - And many more...
     
-- **link to IGV formats.**
+- For a full list of compatible file formats check out the [IGV website](https://software.broadinstitute.org/software/igv/FileFormats)
 
 ---
 ## Loading Sample Metadata
@@ -328,7 +353,7 @@ http://www.broadinstitute.org/igvdata/exampleFiles/exampleSampleInfo.txt
 ---
 ## Sample Metadata with TrackTables
 
-- Tracktables R/Bioconductor packages
+- [Tracktables](https://bioconductor.org/packages/release/bioc/html/tracktables.html) is a R/Bioconductor package.
 - Creates HTML reports with sample information for use with IGV.
 
 &lt;div align="center"&gt;
@@ -336,7 +361,7 @@ http://www.broadinstitute.org/igvdata/exampleFiles/exampleSampleInfo.txt
 &lt;/div&gt;
 
 ---
-## Using sample information.
+## Using sample information
 
 - Sample information can include discrete and continuous.
  
@@ -348,39 +373,38 @@ http://www.broadinstitute.org/igvdata/exampleFiles/exampleSampleInfo.txt
 ---
 ## Loading Genome Information
 
-
 .pull-left[
 &lt;div align="center"&gt;
 &lt;img src="imgs/tt1.png" alt="igv" height="150" width="500"&gt;
 &lt;/div&gt;
-]
+  ]
 .pull-right[
 &lt;div align="center"&gt;
 &lt;img src="imgs/tt2.png" alt="igv" height="400" width="500"&gt;
 &lt;/div&gt;
-]
+  ]
 
 ---
 ## Loading external data and annotation
  ** Load data from a URL ** 
 - As with UCSC, IGV supports data hosted on external servers.
-- Data accessible from a URL such as HTTP and FTP can be loaded using the “Load from URL”.
+- Data accessible from a URL such as HTTP and FTP can be loaded using "File" &gt; “Load from URL”.
 
 ---
 ## Load data from a URL
-
+Try: "https://github.com/ThomasCarroll/tracktables-Data/raw/master/H3K4me3_Example.bw"
 
 .pull-top[
 ![](imgs/ldu1.png)
-]
+  ]
 .pull-bottom[
 ![](imgs/ldu2.png)
-]
+  ]
 
 
 ---
 ## Loading external data and annotation
-** Load data from a server (IGV/Encode servers).** 
+** Load data from a server (IGV/Encode servers)** 
 
 - Unlike UCSC, IGV comes with few external tracks.
  
@@ -390,15 +414,19 @@ http://www.broadinstitute.org/igvdata/exampleFiles/exampleSampleInfo.txt
 ---
 ## Load data from a server (IGV/Encode)
 
-&lt;img src="imgs/ls1.png" alt="igv" height="400" width="500"&gt;
-
+.pull-left[
+![](imgs/ls1.png)
+  ]
+.pull-right[
+![](imgs/ls_2.png)
+  ]
 
 ---
 ## Grabbing encode data directly
 - Encode data can be downloaded from UCSC.
     - http://genome.ucsc.edu/ENCODE/
 
-- This however does not come with sample information provided through IGV interface
+- This however does not come with sample information provided through IGV interface.
 
 ---
 class: inverse, center, middle
@@ -417,7 +445,7 @@ class: inverse, center, middle
 ---
 ## Accepted formats and default display.
 
-- Information on accepted file formats and default display can be found at -
+- Information on accepted file formats and default display can be found at:
 
  http://www.broadinstitute.org/software/igv/RecommendedFileFormats
  
@@ -432,39 +460,39 @@ class: inverse, center, middle
 - Chrom,Start,End
 - Bed6
 - bigBed (recommended)
-]
+  ]
 .pull-right[
  &lt;img src="imgs/bbed.png" alt="igv" height="400" width="700"&gt;
 
-]
+  ]
 ---
 ## Wig, BedGraph and BigWig
 
 .pull-left[
-- Wig/bedGraph require high memory load
-- Recommended format is bigWig
-]
+- Wig/bedGraph require high memory load.
+- Recommended format is bigWig.
+  ]
 .pull-right[
  &lt;img src="imgs/wigBg.png" alt="igv" height="400" width="700"&gt;
 
-]
+  ]
 ---
 ## BAM alignment files
 .pull-left[
 - BAM files contain alignment information.
-- Require an accompanying .bai index file for display
-]
+- Require an accompanying .bai index file for display.
+  ]
 .pull-right[
  &lt;img src="imgs/bam1.png" alt="igv" height="400" width="700"&gt;
 
-]
+  ]
 
 ---
 ## Finer control of display
 
 - IGV allows for customization of track display.
  
-- Menu bar -&gt; View -&gt; Preferences
+- "View" &gt; "Preferences"
  
 - Select track (right click)
 
@@ -515,7 +543,7 @@ class: inverse, center, middle
 &lt;/div&gt;
 ---
 ## Track display options
-**Data Scaling.**
+**Data Scaling**
 
  &lt;div align="center"&gt;
 &lt;img src="imgs/tds.png" alt="igv" height="400" width="400"&gt;
@@ -524,7 +552,7 @@ class: inverse, center, middle
 ## Track display options
 
 
-- Autoscaling adjusts to track's visible signal maximum
+Autoscaling adjusts to track's visible signal maximum.
 
  &lt;div align="center"&gt;
 &lt;img src="imgs/scaling.png" alt="igv" height="400" width="400"&gt;
@@ -538,7 +566,7 @@ class: inverse, center, middle
 
 ---
 
-## IGV displays splicing.
+## IGV displays splicing
 
  &lt;div align="center"&gt;
 &lt;img src="imgs/splicing.png" alt="igv" height="400" width="400"&gt;
@@ -548,7 +576,7 @@ class: inverse, center, middle
 ---
 ## IGV's Sashimi plots
 
-(http://www.broadinstitute.org/igv/Sashimi)
+(https://software.broadinstitute.org/software/igv/Sashimi)
 
  &lt;div align="center"&gt;
 &lt;img src="imgs/shashimi.png" alt="igv" height="400" width="400"&gt;
@@ -570,7 +598,7 @@ class: inverse, center, middle
 &lt;/div&gt;
 
 ---
-## Track summarisation.
+## Track summarisation
 
 IGV can be used to combine tracks
 
@@ -587,13 +615,14 @@ IGV can be used to combine tracks
 
 ---
 ## Create new summed track
-
+There are also options for subtract, divide and multiply.
  &lt;div align="center"&gt;
 &lt;img src="imgs/combineDT3.png" alt="igv" height="400" width="400"&gt;
 &lt;/div&gt;
+
 ---
 ## IGVtools
-- IGVTools can be used to post-process genomics data.
+- [IGVTools](https://software.broadinstitute.org/software/igv/igvtools) can be used to post-process genomics data.
 - Includes indexing, sorting and genome graph creation.
 .pull-left[
 &lt;img src="imgs/itools.png" alt="igv" height="400" width="400"&gt;
@@ -601,13 +630,31 @@ IGV can be used to combine tracks
 .pull-right[
 &lt;img src="imgs/itools2.png" alt="igv" height="200" width="400"&gt;
 ]
+
+---
+## Saving images of tracks
+- "File" &gt; "Save Image"
+- You can easily save images from IGV to vector based svg format. This means you can further customize your tracks and assemble them into figures using [Inkscape](https://inkscape.org/) or Illustrator. 
+
+---
+## Saving your session
+- If you want to revisit your tracks at a later date, you can save the entire session. 
+- When you restart later on you just have to reopen the session and you will be right back where you were. 
+- "File" &gt; "Save Session"
+
 ---
 ## Where to get help?
 
 - http://www.broadinstitute.org/igv/UserGuide
  
 - https://groups.google.com/forum/#!forum/igv-help
+
+
+
+
+
     </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
@@ -617,26 +664,124 @@ IGV can be used to combine tracks
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
-(function() {
-  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
   if (!r) return;
   s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
   d.head.appendChild(s);
-})();</script>
+})(document);
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
   }
-});
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
 (function () {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
   if (location.protocol !== 'file:' && /^https?:/.test(script.src))
     script.src  = script.src.replace(/^https?:/, '');
   document.getElementsByTagName('head')[0].appendChild(script);

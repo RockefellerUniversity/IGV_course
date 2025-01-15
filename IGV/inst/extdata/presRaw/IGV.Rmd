@@ -24,10 +24,10 @@ output:
 
 ---
 ## Overview
-
+.pull-left[
 - Introduction to IGV.
     - What is IGV.
-    - How to run IGV.
+    - How to run IGV Desktop.
 - Navigating IGV.
     - The IGV user interface.
     - Moving around genomes.
@@ -39,26 +39,36 @@ output:
 - Displaying genomics data
     - Basic visualisation.
     - Data dependent visualisation.
+]
+.pull-right[
+- IGV web
+  - How to run IGV web
+- Navigating IGV web
+- Loading and visualising data
+- Sharing web sessions
+]
 
 ---
 ## What is IGV?
 
 - Created by the Broad institute.
-- Genome browser.
+- Desktop Genome browser.
     - Visualises genomic data (expression, ChIP, resequencing, multiple alignment, shRNA).
     - Handles most common genomic data types.
-    - Java Desktop application
+    - Local java application
     - No dependence on server.
-    - Loads data locally or from URL, consumes memory and CPU.
+    - Loads data locally or from URL, consumes local memory and CPU.
 
 ---
-## How to run IGV?
+## How to get IGV?
 
-- Requires Java
-- IGV available from Broad
+- Desktop, Web app and Juicebox
+  - Desktop - Runs locally on desktop using Java
+  - Web app - Runs locally in web browser using JavaScript
+  - Juicebox - For HiC like data, runs locally on desktop using Java
 
 <div align="center">
-<img src="imgs/broad.png" alt="igv" height="300" width="600">
+<img src="imgs/broad2.png" alt="igv" height="400" width="400">
 </div>
 
 http://www.broadinstitute.org/software/igv/download
@@ -68,7 +78,7 @@ http://www.broadinstitute.org/software/igv/download
 ## How to run IGV? (Binary)
 
 <div align="center">
-<img src="imgs/binaryV.png" alt="igv" height="300" width="600">
+<img src="imgs/binary2.png" alt="igv" height="300" width="600">
 </div>
 
 - Download to computer.
