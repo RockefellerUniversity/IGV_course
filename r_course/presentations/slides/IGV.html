@@ -321,13 +321,31 @@ class: inverse, center, middle
 
 IGV allows users to load their own custom genomes.
 
+.pull-left[
 Custom genomes can be loaded from
 - **FASTA**
+- Chromosome sizes file (fai)
 - [JSON file](https://igv.org/doc/desktop/#FileFormats/Genomes/#igv-reference-genome-json) for genome+annotation
+]
+.pull-right[
+![](imgs/LoadFromFasta.png)
+]
 
-&lt;div align="center"&gt;
-&lt;img src="imgs/moving.png" alt="igv" height="400" width="800"&gt;
-&lt;/div&gt;
+---
+
+## Loading genomes from GenomeArk
+
+Genomes can also loaded directly from [UCSC Genome Archive](https://hgdownload.soe.ucsc.edu/hubs/)
+
+.pull-left[
+![](imgs/GeneArk1.png)
+]
+.pull-right[
+![](imgs/GeneArk1.png)
+]
+
+
+
 
 ---
 ## Loading Sample data
@@ -417,15 +435,9 @@ The most straightforward way to build is most often to use excel/openoffice.
 
 ---
 ## Load data from a URL
-Try: "https://github.com/ThomasCarroll/tracktables-Data/raw/master/H3K4me3_Example.bw"
+Try: "https://www.encodeproject.org/files/ENCFF697TWO/@@download/ENCFF697TWO.bigWig"
 
-.pull-top[
-![](imgs/ldu1.png)
-  ]
-.pull-bottom[
-![](imgs/ldu2.png)
-  ]
-
+![](imgs/url_2.png)
 
 ---
 ## Loading external data and annotation
@@ -433,18 +445,31 @@ Try: "https://github.com/ThomasCarroll/tracktables-Data/raw/master/H3K4me3_Examp
 
 - Unlike UCSC, IGV comes with few external tracks.
  
- 
 - External tracks (relevant to the genome) can be loaded from the IGV server or Encode-IGV server.
 
 ---
-## Load data from a server (IGV/Encode)
+## Load data from a server (IGV)
 
 .pull-left[
-![](imgs/ls1.png)
+![](imgs/serversOrEncode.png)
   ]
 .pull-right[
-![](imgs/ls_2.png)
+![](imgs/server.png)
   ]
+
+---
+## Load data from a server (Encode)
+
+
+.pull-left[
+![](imgs/encode_1.png)
+  ]
+.pull-right[
+![](imgs/encode_2.png)
+  ]
+
+
+
 
 ---
 ## Grabbing encode data directly
