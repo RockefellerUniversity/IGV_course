@@ -75,36 +75,33 @@ http://www.broadinstitute.org/software/igv/download
 
 
 ---
-## How to run IGV? (Binary)
+## How to run IGV Desktop?
 
-<div align="center">
-<img src="imgs/binary2.png" alt="igv" height="300" width="600">
-</div>
-
-- Download to computer.
-- Runs locally.
+.pull-left[
+- Download to computer (recommend those including Java).
+  - Runs locally out of the box.
 - Archived versions available.
-
----
-## How to run IGV? (Webstart)
-
+  - In case you liked functionality of previous version better.
+- Snapshots of development versions available.
+  - These may be unstable and/or have features which are not included in release version.
+]
+.pull-right[
 <div align="center">
-<img src="imgs/javaV.png" alt="igv" height="300" width="600">
+<img src="imgs/binary2.png" alt="igv" height="400" width="300">
 </div>
-
-- Runs from webstart.
-- Always runs latest version of IGV.
+]
 
 ---
 ## IGV GUI
 
-![](imgs/igvGUI.png)
+![](imgs/igvGUI2.png)
 
 ---
 ## IGV GUI
 
 .pull-left[
-![](imgs/igvH.png)
+![](imgs/igvGUIh
+.png)
   ]
 .pull-right[
 - Sample information panel <1>
@@ -116,7 +113,7 @@ http://www.broadinstitute.org/software/igv/download
 ---
 ## Menu bar
 
-![](imgs/menubar.png)
+![](imgs/menubar2.png)
 
 - File - Load data/sample information.
 - Genomes - Load and manage genomes.
@@ -278,13 +275,13 @@ class: inverse, center, middle
 ---
 ## Loading Genome Information
 
-- Most genomes can be selected from dropdown.
+- Many genomes can be selected from dropdown.
 
 .pull-left[
-![](imgs/lgi.png)
+![](imgs/lgi_1.png)
   ]
 .pull-right[
-![](imgs/lgi2.png)
+![](imgs/lgi_2.png)
   ]
 
 
@@ -295,10 +292,11 @@ class: inverse, center, middle
 
 .pull-left[
 - Genomes not included may be downloaded from repository
+  - Users can select whether to download sequence/annotation or use version hosted online for many genomes.
   ]
 
 .pull-right[
-![](imgs/lgi3.png)
+![](imgs/lgi3_2_2.png)
   ]
 
 ---
