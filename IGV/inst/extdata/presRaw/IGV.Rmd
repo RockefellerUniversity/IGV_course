@@ -547,7 +547,7 @@ class: inverse, center, middle
 ** General **
 
  <div align="center">
-<img src="imgs/dpg.png" alt="igv" height="400" width="400">
+<img src="imgs/general_2.png" alt="igv" height="400" width="400">
 </div>
 
 ---
@@ -556,7 +556,7 @@ class: inverse, center, middle
 ** Tracks **
 
  <div align="center">
-<img src="imgs/dpt.png" alt="igv" height="400" width="400">
+<img src="imgs/tracks_2.png" alt="igv" height="400" width="400">
 </div>
 
 ---
@@ -565,7 +565,7 @@ class: inverse, center, middle
 ** Alignments **
 
  <div align="center">
-<img src="imgs/dpa.png" alt="igv" height="400" width="400">
+<img src="imgs/alignments_2.png" alt="igv" height="400" width="400">
 </div>
 
 ---
