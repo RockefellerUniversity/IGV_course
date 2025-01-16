@@ -687,6 +687,98 @@ There are also options for subtract, divide and multiply.
 - When you restart later on you just have to reopen the session and you will be right back where you were. 
 - "File" > "Save Session"
 
+
+---
+## IGV web
+
+.pull-left[
+IGV web is a refactoring of much of the functionality of IGV desktop into JavaScript.
+
+This means that we can now access an IGV desktop like genome browser in a modern webbrowser without the need for any dowloading or installing of components.
+
+It is is still running locally so will consume memory and cpu as you load more data.
+]
+.pull-right[
+IGV web is available at [https://igv.org/app/](https://igv.org/app/)
+
+![](imgs/broad2.png)
+
+]
+
+---
+## IGV web
+
+The web app looks like the desktop version in your web browser but has some of the functionality stripped away (ie. preferences are limited, no group autoscale).
+
+If does however contain everything we need to quickly visualise our genomic data from both local and remote files.
+
+![](imgs/igvjs.png)
+
+---
+## IGV web
+
+We can load genomes from local files, remote files, IGV servers and UCSC genome archive
+
+We can also provide Dropbox and google drive paths but these need to be public and not password controlled.
+
+
+![](imgs/igvjs_genome.png)
+---
+## IGV web
+
+Similarly we can load sample data in from local or remote sources and have access to server data (such as Encode) depending on the genome loaded.
+
+Additional databases for human hg38 include data from 4D genome project and GTEx EQTLs.
+
+
+![](imgs/igvjs_sampledata.png)
+---
+## IGV web
+
+With our genome and data loaded we can configure our tracks in many ways we did within the Desktop browser, although not with as many options *yet*.
+
+![](imgs/igvjs_loaded.png)
+---
+## IGV web
+
+IGV Web has some nice ways of sharing sessions which werent available to us in IGV desktop.
+
+Here we can share a URL to collaborators who can then review the data as we have setup.
+
+Note nothing we have loaded from a local file will be able to be captured by this method.
+
+
+
+![](imgs/igvjs_url.png)
+
+---
+## IGV web
+
+We can even share a QR code with people on our posters/t-shirts of our favourite IGV sessions
+
+
+![](imgs/igvjs_QR.png)
+---
+## IGV web
+
+A final neat features of sharing sessions is the ability to create iframes which can be embedded in our HTML reports to show/highlight our IGV sessions of choice
+
+
+![](imgs/igvjs_iframe.png)
+
+---
+## IGV web
+
+We can easily integrate these iframes into our R reports for instance using Rmarkdown and adding a simple tag (*data-external="1"*) to the end of the iframe.
+
+.pull-left[
+![](imgs/igvjs_rmarkdown.png)
+]
+.pull-right[
+![](imgs/igvjs_rmarkdown2.png)
+]
+
+
 ---
 ## Where to get help?
 
