@@ -359,8 +359,9 @@ interest.</p>
 <li>Zoom out to see the surrounding genes.</li>
 <li>Select the “RefSeq Genes” track and expand to see all transcript
 isoforms.</li>
-<li>Scroll to the left to discover the non-coding RNA SCRNA10.</li>
-<li>Click on SCRNA to bring up a window with further information.</li>
+<li>Scroll to the left to discover the Vamp1 gene.</li>
+<li>Click on gene to bring up a window with further information.</li>
+<li>Review gene information from NCBI link.</li>
 <li>Double click on Gapdh to recentre window on the gene.</li>
 <li>Add a region of interest at the Gapdh locus using the IGV menu *
 Regions -&gt; Region Navigator -&gt; add</li>
@@ -369,12 +370,10 @@ Regions -&gt; Region Navigator -&gt; add</li>
 <li>Go to the IGV menu -&gt; File -&gt; load from server</li>
 <li>From the menu follow drop-down</li>
 <li>Tutorials -&gt; UI Basics (Encode):</li>
-<li>GM12878 CFCF</li>
 <li>GM12878 H3K27ac</li>
 <li>GM12878 H3K27me3</li>
 <li>GM12878 H3K36me3</li>
-<li>GM12878 H3K4me3</li>
-<li>GM12878 H3K9ac</li>
+<li>GM12878 H3K4me1</li>
 </ul>
 <div id="controlling-igv-display" class="section level4">
 <h4>Controlling IGV display</h4>
@@ -387,13 +386,16 @@ autoscale) Once set, navigate to PIANP.</li>
 <li>Note the difference in enrichment of ChIPseq.</li>
 <li>Add as “Region of interest” and edit description to show “Inactive
 gene”</li>
-<li>Zoom out to compare enrichment across neighbouring genes.</li>
+<li>Autoscale again and zoom out to compare enrichment across
+neighbouring genes (Gapdh and Pianp in same view).</li>
 <li>Go to Regions -&gt; Gene Lists.. -&gt; “proneural dev genes”</li>
 <li>Inspect the signal across genes to determine their expression
 state.</li>
+<li>Click on individual genes and compare to neighbouring genes, click
+back to return to gene list view</li>
 <li>Return to main view by selecting all from chromosome dropdown.</li>
 <li>Colour all track by a unique colour. Good idea to make K27me3 the
-most distinct colour to rest. Autoscalealltracks.</li>
+most distinct colour to rest. Autoscale all tracks.</li>
 <li>Select all tracks and create an overlay,
 <ul>
 <li>select tracks -&gt; Create Overlay Track</li>
@@ -418,7 +420,8 @@ Loading the data</li>
 <li>Heart</li>
 <li>Lung</li>
 </ul></li>
-<li>Go to IGV menu -&gt; Views -&gt; Preferences -&gt; Alignments</li>
+<li>Go to IGV menu -&gt; Views -&gt; Preferences -&gt; Alignments or
+RNA</li>
 <li>Tick “show junction track”</li>
 <li>Set “visibility range threshold’ to 15kb</li>
 <li>Go to SLC25A3 gene.</li>
@@ -440,8 +443,9 @@ transcripts between tissue</li>
 <li>Click on junctions to identify start and end of spans. Another way
 to inspect splicing</li>
 <li>Select tracks -&gt; Shashmi plot</li>
-<li>Select Gene Track -&gt; Refseq Genes</li>
 <li>Select Alignment Tracks –&gt; Heart + Liver</li>
+<li>In shashimi plot window set min junction coverage to 500 for both
+tracks.</li>
 <li>Save image and compare junctions across tissue.</li>
 </ul>
 </div>
