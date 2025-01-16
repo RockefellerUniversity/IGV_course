@@ -18,12 +18,10 @@ output:
     theme: united  # many options for theme, this one is my favorite.
     highlight: tango  # specifies the syntax highlighting style
 
-
 ---
-# IGV
 
----
-## Overview
+
+## IGV Overview
 .pull-left[
 - Introduction to IGV.
     - What is IGV.
@@ -782,7 +780,9 @@ We can easily integrate these iframes into our R reports for instance using Rmar
 ---
 ## Where to get help?
 
-- http://www.broadinstitute.org/igv/UserGuide
+- https://igv.org/doc/desktop/#UserGuide
+
+- https://igv.org/doc/desktop/#GettingHelp/
  
 - https://groups.google.com/forum/#!forum/igv-help
 
