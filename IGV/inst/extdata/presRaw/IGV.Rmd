@@ -31,20 +31,20 @@ output:
 - Navigating IGV.
     - The IGV user interface.
     - Moving around genomes.
-- Loading and visualising data.
+- Loading and visualizing data.
     - Genome information and annotation.
     - User supplied data.
     - Sample information.
     - External data.
 - Displaying genomics data
-    - Basic visualisation.
-    - Data dependent visualisation.
+    - Basic visualization.
+    - Data dependent visualization.
 ]
 .pull-right[
 - IGV web
   - How to run IGV web
 - Navigating IGV web
-- Loading and visualising data
+- Loading and visualizing data
 - Sharing web sessions
 ]
 
@@ -53,7 +53,7 @@ output:
 
 - Created by the Broad institute.
 - Desktop Genome browser.
-    - Visualises genomic data (expression, ChIP, resequencing, multiple alignment, shRNA).
+    - Visualizes genomic data (expression, ChIP, resequencing, multiple alignment, shRNA).
     - Handles most common genomic data types.
     - Local java application
     - No dependence on server.
@@ -65,7 +65,7 @@ output:
 - Desktop, Web app and Juicebox
   - Desktop - Runs locally on desktop using Java
   - Web app - Runs locally in web browser using JavaScript
-  - Juicebox - For HiC like data, runs locally on desktop using Java
+  - Juicebox - For Hi-C like data, runs locally on desktop using Java
 
 <div align="center">
 <img src="imgs/broad2.png" alt="igv" height="400" width="400">
@@ -258,7 +258,7 @@ http://www.broadinstitute.org/software/igv/download
 
 ---
 ## Gene Lists
-Using gene lists you can visualise several genes concurrently.
+Using gene lists you can visualize several genes concurrently.
 
 <div align="center">
 <img src="imgs/GL2.png" alt="igv" height="400" width="600">
@@ -694,9 +694,9 @@ There are also options for subtract, divide and multiply.
 .pull-left[
 IGV web is a refactoring of much of the functionality of IGV desktop into JavaScript.
 
-This means that we can now access an IGV desktop like genome browser in a modern webbrowser without the need for any dowloading or installing of components.
+This means that we can now access an IGV desktop like genome browser in a modern web browser without the need for any downloading or installing of components.
 
-It is is still running locally so will consume memory and cpu as you load more data.
+It is is still running locally so will consume memory and CPU as you load more data.
 ]
 .pull-right[
 IGV web is available at [https://igv.org/app/](https://igv.org/app/)
@@ -708,9 +708,9 @@ IGV web is available at [https://igv.org/app/](https://igv.org/app/)
 ---
 ## IGV web
 
-The web app looks like the desktop version in your web browser but has some of the functionality stripped away (ie. preferences are limited, no group autoscale).
+The web app looks like the desktop version in your web browser but has some of the functionality stripped away (i.e.. preferences are limited, no group autoscale).
 
-If does however contain everything we need to quickly visualise our genomic data from both local and remote files.
+If does however contain everything we need to quickly visualize our genomic data from both local and remote files.
 
 ![](imgs/igvjs.png)
 
@@ -719,7 +719,7 @@ If does however contain everything we need to quickly visualise our genomic data
 
 We can load genomes from local files, remote files, IGV servers and UCSC genome archive
 
-We can also provide Dropbox and google drive paths but these need to be public and not password controlled.
+We can also provide Dropbox and Google drive paths but these need to be public and not password controlled.
 
 
 ![](imgs/igvjs_genome.png)
@@ -728,7 +728,7 @@ We can also provide Dropbox and google drive paths but these need to be public a
 
 Similarly we can load sample data in from local or remote sources and have access to server data (such as Encode) depending on the genome loaded.
 
-Additional databases for human hg38 include data from 4D genome project and GTEx EQTLs.
+Additional databases for human hg38 include data from 4D genome project and GTEx eQTLs.
 
 
 ![](imgs/igvjs_sampledata.png)
@@ -741,7 +741,7 @@ With our genome and data loaded we can configure our tracks in many ways we did 
 ---
 ## IGV web
 
-IGV Web has some nice ways of sharing sessions which werent available to us in IGV desktop.
+IGV Web has some nice ways of sharing sessions which weren't available to us in IGV desktop.
 
 Here we can share a URL to collaborators who can then review the data as we have setup.
 
@@ -754,7 +754,7 @@ Note nothing we have loaded from a local file will be able to be captured by thi
 ---
 ## IGV web
 
-We can even share a QR code with people on our posters/t-shirts of our favourite IGV sessions
+We can even share a QR code with people on our posters/t-shirts of our favorite IGV sessions
 
 
 ![](imgs/igvjs_QR.png)
